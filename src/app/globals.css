@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.artistBg {
+  background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+@font-face {
+  font-family: "native-land";
+  src: url("../../public/font/9b07fbdfffb2f80f2a26be694e7e0a9a.ttf");
+}
+.native {
+  font-family: "native-land", sans-serif;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.carousel-item-animation {
+  display: flex;
+  animation: scroll 30s linear infinite;
+}
+.carousel-item-animation2 {
+  display: flex;
+  animation: scroll2 30s linear infinite;
+}
+
+.questionShadow {
+  box-shadow: 0px 4px 4px 0px #23286914;
+}
+.footerHeader {
+  @apply text-xl text-primary  mb-3 font-semibold;
+}
+
+.footerLi {
+  @apply text-black hover:text-primary cursor-pointer font-normal text-base transition-all;
+}
+
+.carouselcard {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel .carousel-item {
+  transition: transform 2s ease; /* Add a transition for smooth animation */
+}
+
+.carousel-vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-vertical .carousel-item {
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+@media screen and (min-width: 1025px) and (max-width: 1247px) {
+  .handlresponsive{
+
+    display: flex;
+    flex-direction: column;
+    
+
+  }
+  
+}
